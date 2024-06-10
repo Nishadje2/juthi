@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Juthi!</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .balloons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .balloon {
+        width: 50px;
+        height: 70px;
+        background-color: #ff6384;
+        border-radius: 50% 50% 50% 0;
+        margin: 0 10px;
+        animation: float 4s infinite ease-in-out;
+    }
+
+    .balloon:nth-child(2) {
+        animation-delay: 1s;
+    }
+
+    .balloon:nth-child(3) {
+        animation-delay: 2s;
+    }
+
+    .balloon:nth-child(4) {
+        animation-delay: 3s;
+    }
+
+    .balloon:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    .balloon:nth-child(6) {
+        animation-delay: 1.5s;
+    }
+
+    .balloon:nth-child(7) {
+        animation-delay: 2.5s;
+    }
+
+    .balloon:nth-child(8) {
+        animation-delay: 3.5s;
+    }
+
+    .balloon:nth-child(9) {
+        animation-delay: 1.2s;
+    }
+
+    .balloon:nth-child(10) {
+        animation-delay: 2.2s;
+    }
+
+    .balloon:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #ff6384;
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: 15px;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-1000px) rotate(720deg);
+        }
+    }
+
+    #message {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.2em;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 id="message">Happy Birthday Juthi! 🎉🎈<br>Onek opekkhai silam and birthday to palon kora hoina janoi r tumake ami onek valobasi love you!</h1>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+    <p class="footer">Made with ❤️ by [Nishad]</p>
+</div>
+</body>
+</html>
